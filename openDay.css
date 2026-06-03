@@ -14,8 +14,8 @@ body{
 
 #sectionheader{
     color: #001f60;
-    text-align: left;!important
-    display: block;
+    text-align: left!important;
+    display: block!important;
 }
 
 input[type="text"], input[type="submit"],input[type="select"],.form-select,#calcolacf, #luogonascita{
@@ -53,8 +53,8 @@ input[type="email"]{
 }
 
 label {
-    text-align: left;!important
-    display: block;!important
+    text-align: left!important;
+    display: block!important;
 }
 
 #terms{
