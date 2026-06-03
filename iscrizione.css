@@ -14,6 +14,8 @@ body{
 
 #sectionheader{
     color: #001f60;
+    font-weight: 600;
+    text-align: left;
 }
 
 input[type="text"], input[type="submit"],input[type="select"],.form-select,#calcolacf, #luogonascita{
