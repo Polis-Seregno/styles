@@ -53,7 +53,7 @@ input[type="email"]{
     color: red;
 }
 
-label, h6, span {
+label, h6, .msg {
     text-align: left!important;
     display: block!important;
 }
