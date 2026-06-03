@@ -15,7 +15,8 @@ body{
 #sectionheader{
     color: #001f60;
     font-weight: 600;
-    text-align: left;
+    text-align: left!important;
+    display: block!important; 
 }
 
 input[type="text"], input[type="submit"],input[type="select"],.form-select,#calcolacf, #luogonascita{
@@ -52,9 +53,9 @@ input[type="email"]{
     color: red;
 }
 
-label {
-    text-align: left;
-    display: block;
+label, h6 {
+    text-align: left!important;
+    display: block!important;
 }
 
 #terms{
