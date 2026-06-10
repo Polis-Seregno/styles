@@ -29,9 +29,10 @@ input[type="email"]{
     color: red;
 }
 
-#label, .msg {
+label, .msg {
     text-align: left !important;
     display: block !important;
+    font-weight: bold;
 }
 
 #submitBtn{
