@@ -14,23 +14,14 @@ body{
 
 #sectionheader{
     color: #001f60;
-    font-weight: 600;
-    text-align: left!important;
-    display: block!important; 
 }
 
 input[type="text"], input[type="submit"],input[type="select"],.form-select,#calcolacf, #luogonascita{
     text-transform: capitalize;
-    border-radius: 30px;
-}
-
-input[type="date"]{
-    border-radius: 30px;
 }
 
 input[type="email"]{
     text-transform: lowercase;
-    border-radius: 30px;
 }
 
 #atleta {
@@ -44,18 +35,18 @@ input[type="email"]{
 }
 
 #calcolacf {
-    width: 100%; 
-    background-color: #fce300;  
-    color: #001f60; 
+    width: 100%;
+    background-color: #fce300;
+    color: #001f60;
 }
 
-#colored{
+.red{
     color: red;
 }
 
-label, h6, .msg {
-    text-align: left!important;
-    display: block!important;
+label {
+    text-align: left;
+    display: block;
 }
 
 #terms{
@@ -63,6 +54,7 @@ label, h6, .msg {
     border: 1px;
     border-color: #001f60;
 }
+
 #invia{
     background-color: #00b5e2;
     color: white;
@@ -81,4 +73,20 @@ hr{
 
 .readonly-style {
     background-color: #e0e0e0;
+}
+
+.hero{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.card-header{
+    background: #00b5e2;
+    color: white;
 }
