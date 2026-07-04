@@ -49,26 +49,14 @@ label {
     display: block;
 }
 
-#terms{
-    transform: scale(2);
-    border: 1px;
-    border-color: #001f60;
-}
-
 #invia{
     background-color: #00b5e2;
     color: white;
-    font-weight: bold;
 }
 #invia:hover{
     background-color: #fce300;
     color: #001f60;
     font-weight: bold;
-}
-
-hr{
-    color: #00b5e2;
-    border: 1px solid;
 }
 
 .readonly-style {
@@ -89,4 +77,5 @@ hr{
 .card-header{
     background: #00b5e2;
     color: white;
+    text-transform: uppercase;
 }
