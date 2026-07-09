@@ -79,3 +79,12 @@ label {
     color: white;
     text-transform: uppercase;
 }
+
+.error-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #F8D7DA;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
