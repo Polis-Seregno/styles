@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --blu: #001f60;
+    --azzurro: #00b5e2;
+    --giallo: #fce300;
+
+    /* Verde e rosso attenuati */
+    --ok-accento: #4f9a74;
+    --ko-accento: #c26a6a;
+    --ko-testo: #9b4a4a;
+    --ko-forte: #b05555;
+
+    --bordo-campo: #cfd8e3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--blu);
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* ---------- Card ---------- */
+.card {
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: var(--azzurro);
+    color: #fff;
+    padding: 14px 20px;
+    text-transform: uppercase;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* ---------- Campi ---------- */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.req {
+    color: var(--ko-accento);
+    margin-left: 2px;
+}
+
+.hint {
+    color: var(--ko-testo);
+}
+
+.errore {
+    color: var(--ko-testo);
+    font-weight: 500;
+}
+
+.form-control {
+    border-color: var(--bordo-campo);
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--azzurro);
+    box-shadow: 0 0 0 .25rem rgba(0, 181, 226, .2);
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+input[type="email"] {
+    text-transform: lowercase;
+}
+
+input[type="text"][id="00NR2000002BNL7"] {
+    text-transform: uppercase;
+}
+
+.readonly-style {
+    background-color: #e9eef5;
+    color: #5b6b85;
+}
+
+/* ---------- Bottoni ---------- */
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 10px 16px;
+    text-transform: capitalize;
+}
+
+
+/* ---------- Avviso pagina non attiva ---------- */
+.avviso-chiuso {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 24px;
+    background: var(--ko-forte);
+    color: #fff;
+}
+
+.avviso-chiuso h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.avviso-chiuso p {
+    margin: 0;
+}
+
+.avviso-icona {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .2);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.email{
+    color: white;
+}
