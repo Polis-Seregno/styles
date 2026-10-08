@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --blu: #001f60;
+    --azzurro: #00b5e2;
+    --giallo: #fce300;
+
+    --ok-sfondo: #eef6f1;
+    --ok-bordo: #a9cdb8;
+    --ok-accento: #4f9a74;
+    --ok-testo: #2f6b4f;
+
+    --ko-sfondo: #fbf0f0;
+    --ko-bordo: #e2b5b5;
+    --ko-accento: #c26a6a;
+    --ko-testo: #9b4a4a;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--blu);
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* ---------- Card ---------- */
+.card {
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: var(--azzurro);
+    color: #fff;
+    padding: 14px 20px;
+}
+
+.card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ---------- Avviso ---------- */
+.avviso {
+    background: #fff8e1;
+    border-left: 6px solid var(--giallo);
+    color: #5c4a12;
+    padding: 20px 24px;
+}
+
+.avviso h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--blu);
+}
+
+.esempio {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 14px;
+}
+
+.esempio + .esempio {
+    margin-top: 16px;
+}
+
+.esempio img {
+    flex: 0 0 auto;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.esempio h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.esempio.ok {
+    background: var(--ok-sfondo);
+    border-color: var(--ok-bordo);
+    color: var(--ok-testo);
+}
+
+.esempio.ko {
+    background: var(--ko-sfondo);
+    border-color: var(--ko-bordo);
+    color: var(--ko-testo);
+}
+
+/* ---------- Elenchi ---------- */
+.check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 6px;
+}
+
+.check-list li:last-child {
+    margin-bottom: 0;
+}
+
+.check-list li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+.ok .check-list li::before {
+    content: "\2713";
+    background: var(--ok-accento);
+}
+
+.ko .check-list li::before {
+    content: "\2715";
+    background: var(--ko-accento);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 575.98px) {
+    .esempio {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .esempio img {
+        width: 100%;
+    }
+}
