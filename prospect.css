@@ -122,3 +122,12 @@ label,h6 {
     color: #d39e00;
     line-height: 1;
 }
+
+.error-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #F8D7DA;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
